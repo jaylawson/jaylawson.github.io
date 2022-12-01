@@ -1,1 +1,53 @@
+/*
+    website will consist of four areas
+    -sidebar:   for navigation
+    -header:    for page overview
+    -content:   for page info
+    -footer:    for page end features
+     ___ _______
+    |   |_______| <-header
+    |   |       |
+    |NAV| INFO  |
+    |   |_______|
+    |___|_______| <-footer
 
+    overview of site layout
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+    grid layout css
+*/
+wrapper {
+    display: 
+}
+
+/*
+    highlight
+*/
+p {
+    text-align: center;
+    color: blue;
+}
+
+/*
+    sidebar css
+*/
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 25%;
+    float: left;
+}
+
+.main{
+    width: 75%;
+    float: left;
+}
