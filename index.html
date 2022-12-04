@@ -1,18 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello, World!</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+            height: auto;
+        }
+
+        #wrapper-div {
+            width: 100%;
+            height: inherit;
+        }
+
+        #main-div {
+            width: 100%;
+            position: absolute;
+            background-color: black;
+        }
+
+        #left-div {
+            width: 20%;
+            height: 100%;
+            float: left;
+            position: fixed;
+            line-height: 50px;
+            padding-top:2%;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 150px 150px 150px 150px;
+        }
+
+        .sidebar {
+            background-color: #FF2400;
+            list-style-type: none;
+            text-align: center;
+            line-height: 6em;
+        }
+
+        #right-div {
+            width: 80%;
+            height: inherit;
+            float: right;
+            position: relative;
+            padding-left: 0.5em;
+        }
+
+        .page-div {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+
+        .header {
+            background-color: deepskyblue;
+            min-height: 10vh;
+            line-height: 10vh;
+            padding-left: 2%;
+        }
+
+        .content {
+            background-color: white;
+            min-height: 80vh;
+            padding: 2%;
+        }
+
+        .footer {
+            background-color: deepskyblue;
+            min-height: 10vh;
+            line-height: 10vh;
+            margin-top: auto;
+            padding-left: 2%;
+        }
+    </style>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/globe.ico" type="image/x-icon">
-  </head>
-  <body>
-      <main>
-          <h1>Jared K. Lawson</h1>
-          <p>Amalgamation of different projects ranging from javascript site development, to webgl creations, and projects demonstrating fundamentals.</p>
-      </main>
-      <script src="index.js"></script>
-  </body>
+</head>
+    <body id="wrapper-div">
+        <!--
+    <h1>Jared K. Lawson</h1>
+    <p>Amalgamation of different projects ranging from javascript site development, to webgl creations, and projects demonstrating fundamentals.</p>
+    Name
+    ul
+    about
+    experience
+    projects
+    contact
+    list-style-type: "none"
+    -->
+        
+        <div id="main-div" class="clearfix">
+
+            <div id="left-div" class="sidebar">
+                <img src="./assets/me.jpg" alt="JKL" class="profile">
+                <h2 style="color:black">Jared K. Lawson</h2>
+                <ul class="sidebar-list" style="font-size: 24px">
+                    <li><a href="./index.html">About</a></li>
+                    <li><a href="./experience.html">Experience</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="right-div" class="page-div">
+                <div class="header">
+                    <h1>About</h1>
+                </div>
+
+                <div class="content">
+                    <p>
+                        This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text.
+                    </p>
+                </div>
+
+                <div class="footer">
+                    <p>
+                        This is some text.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
 </html>

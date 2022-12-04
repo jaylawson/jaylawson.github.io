@@ -19,7 +19,6 @@ var name;
 
 //initialize sidebar
 function initSidebar() {
-
 }
 
 //sidebar css styling

@@ -3,8 +3,21 @@
 //Description: Pulls header/content/footer files to create github pages
 
 //Main Page
-//let main = document.getElementsByTagName("main");
-//console.log(main[0].innerHTML);
+/*
+    website will consist of four areas
+    -sidebar:   for navigation
+    -header:    for page overview
+    -content:   for page info
+    -footer:    for page end features
+     ___ _______
+    |   |_______| <-header
+    |   |       |
+    |NAV| INFO  |
+    |   |_______|
+    |___|_______| <-footer
+
+    overview of site layout
+*/
 
 //sidebar creation for page
 function sidebarCreate() {
@@ -25,4 +38,3 @@ function contentCreate() {
 function footerCreate() {
     initFooter();
 }
-

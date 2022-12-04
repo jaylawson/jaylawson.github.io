@@ -1,3 +1,4 @@
+/*Page areas*/
 /*
     website will consist of four areas
     -sidebar:   for navigation
@@ -7,47 +8,71 @@
      ___ _______
     |   |_______| <-header
     |   |       |
-    |NAV| INFO  |
+    |nav| info  |
     |   |_______|
     |___|_______| <-footer
 
     overview of site layout
 */
-
-* {
+/** {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: Arial;
+    height: auto;
 }
 
-/*
-    grid layout css
-*/
-wrapper {
-    display: 
+#wrapper-div {
+    width: 100%;
+    height: inherit;
 }
 
-/*
-    highlight
-*/
-p {
-    text-align: center;
-    color: blue;
+#main-div {
+    width: 100%;
+    position: absolute;
 }
 
-/*
-    sidebar css
-*/
-ul.navbar {
+#left-div {
+    width: 20%;
+    height: 100%;
+    float: left;
+    position: fixed;
+}
+
+.sidebar {
+    background-color: black;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    line-height: 6em;
 }
 
-.menu {
-    width: 25%;
-    float: left;
+#right-div {
+    width: 80%;
+    height: inherit;
+    float: right;
+    position: relative;
 }
 
-.main{
-    width: 75%;
-    float: left;
+.page-div {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
+.header {
+    background-color: deepskyblue;
+    height: 10%;
+}
+
+.content {
+    background-color: white;
+    height: 80%;
+}
+
+.footer {
+    background-color: deepskyblue;
+    height: 10%;
+    margin-top: auto;
+}
+*/
