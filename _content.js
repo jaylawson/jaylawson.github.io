@@ -10,6 +10,17 @@
  * for others a listed view of projects displayed
 */
 
+//content css
+//.content {
+//    background - color: white;
+//    min - height: 80vh;
+//    padding: 2 %;
+//}
+
+//content html
+//this is page dependent will be read from source file
+//source file will provide the information
+
 //initialize sidebar
 function initSidebar() {
 

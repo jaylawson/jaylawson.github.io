@@ -14,7 +14,7 @@
 
     overview of site layout
 */
-/** {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -30,6 +30,7 @@
 #main-div {
     width: 100%;
     position: absolute;
+    background-color: black;
 }
 
 #left-div {
@@ -37,13 +38,45 @@
     height: 100%;
     float: left;
     position: fixed;
+    line-height: 50px;
+    padding-top: 2%;
 }
 
-.sidebar {
-    background-color: black;
+canvas {
+    background: #000;
+    position: fixed;
+}
+
+.sidebar h2 {
+    margin-left: 1em;
+    color: white;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px 150px 150px 150px;
+    margin-left: 14%;
+}
+
+.sidebar-list {
     list-style-type: none;
-    text-align: center;
-    line-height: 6em;
+}
+
+ul.sidebar-list li:hover {
+    background: #0f0;
+    padding: 0px;
+    opacity: 0.75;
+}
+
+ul.sidebar-list a {
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 1em;
 }
 
 #right-div {
@@ -51,6 +84,7 @@
     height: inherit;
     float: right;
     position: relative;
+    padding-left: 0.5em;
 }
 
 .page-div {
@@ -61,18 +95,23 @@
 }
 
 .header {
-    background-color: deepskyblue;
-    height: 10%;
+    /*    #FF2400 */
+    background-color: darkorange;
+    min-height: 10vh;
+    line-height: 10vh;
+    padding-left: 2%;
 }
 
 .content {
     background-color: white;
-    height: 80%;
+    min-height: 80vh;
+    padding: 4%;
 }
 
 .footer {
-    background-color: deepskyblue;
-    height: 10%;
+    background-color: darkorange;
+    min-height: 10vh;
+    line-height: 10vh;
     margin-top: auto;
+    padding-left: 2%;
 }
-*/

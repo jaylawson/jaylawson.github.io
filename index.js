@@ -9,12 +9,12 @@
     -header:    for page overview
     -content:   for page info
     -footer:    for page end features
-     ___ _______
-    |   |_______| <-header
-    |   |       |
-    |NAV| INFO  |
-    |   |_______|
-    |___|_______| <-footer
+     ____ _________
+    |    |_________| <-header
+    |    |         |
+    |side| content |
+    |bar |_________|
+    |____|_________| <-footer
 
     overview of site layout
 */
@@ -37,4 +37,24 @@ function contentCreate() {
 //footer creation for page
 function footerCreate() {
     initFooter();
+}
+
+//creates the home page, which is also the about page
+function aboutCreate() {
+
+}
+
+//creates experiences page 
+function experienceCreate() {
+
+}
+
+//creates project page, and associated pages for those projects
+function projectsCreate() {
+
+}
+
+//creates contact page
+function contactCreate() {
+
 }

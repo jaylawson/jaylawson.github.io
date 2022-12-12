@@ -13,26 +13,61 @@
  * last updated: <timestamp>
 */
 
-//image of myself
-var portrait;
-var name;
+//sidebar css styling
+//#left - div {
+//    width: 20 %;
+//    height: 100 %;
+//    float: left;
+//    position: fixed;
+//    line - height: 50px;
+//    padding - top: 2 %;
+//}
+//.profile {
+//    width: 150px;
+//    height: 150px;
+//    border - radius: 150px 150px 150px 150px;
+//}
+//.sidebar {
+//    background - color: #FF2400;
+//    text - align: left;
+//    line - height: 6em;
+//    padding - left: 2em;
+//}
+//.sidebar - list {
+//    list - style - type: none;
+//}
+//a {
+//    color: black;
+//    text - decoration: none;
+//    padding - left: 1em;
+//}
+
+//sidebar html
+//<div id="left-div" class="sidebar">
+//    <img src="./assets/me.jpg" alt="JKL" class="profile">
+//        <h2>Jared K. Lawson</h2>
+//        <ul class="sidebar-list" style="font-size: 24px">
+//            <li>
+//                <img src="./assets/person2.png" alt="person" width="18" height="18" />
+//                <a href="./index.html">About</a>
+//            </li>
+//            <li>
+//                <img src="./assets/experience.png" alt="person" width="18" height="18" />
+//                <a href="./experience.html">Experience</a>
+//            </li>
+//            <li>
+//                <img src="./assets/work.png" alt="person" width="18" height="18" />
+//                <a href="./projects.html">Projects</a>
+//            </li>
+//            <li>
+//                <img src="./assets/email.png" alt="person" width="18" height="18" />
+//                <a href="./contact.html">Contact</a>
+//            </li>
+//        </ul>
+//</div>
 
 //initialize sidebar
 function initSidebar() {
 }
 
-//sidebar css styling
-//inside style sheet sidebar
-
-//sidebar html example
-//<ul>
-//    <li><a href="default.asp">Home</a></li>
-//    <li><a href="news.asp">News</a></li>
-//    <li><a href="contact.asp">Contact</a></li>
-//    <li><a href="about.asp">About</a></li>
-//</ul>
-
-//sidebar javascript event listeners
-
-//sidebar
 
