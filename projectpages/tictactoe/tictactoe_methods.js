@@ -193,7 +193,12 @@ function gameEnd() {
 function htmlLog() {
     //write the turn and player
     let log = document.createElement("p");
-    log.appendChild(document.createTextNode((playersTurn ? "Player " : "Computer " ) + "Turn: " + (turn + 1) + "\n"));
+    log.appendChild(document.createTextNode((playersTurn ? "Player " : "Computer ") + "Turn: " + (turn + 1) +
+        " (Evaluated: " + evalStateCount + " states, Expanded " + expandedStateCount + " states)"));
+
+    evalStateCount = 0;
+    expandedStateCount = 0;
+
     gameLog.appendChild(log);
 
     //write the board
