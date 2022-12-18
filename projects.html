@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/globe.ico" type="image/x-icon">
+</head>
+<body id="wrapper-div">
+
+    <div id="main-div" class="clearfix">
+        <canvas id="canvas-Section">Error, canvas not support</canvas>
+        <div id="left-div" class="sidebar">
+            <img src="./assets/me.jpg" alt="JKL" class="profile">
+            <h2>Jared K. Lawson</h2>
+            <ul class="sidebar-list" style="font-size: 24px">
+                <li>
+                    <a href="./index.html">
+                        <img src="./assets/person2.png" alt="person" width="18" height="18" />
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="./experience.html">
+                        <img src="./assets/experience.png" alt="person" width="18" height="18" />
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="./projects.html">
+                        <img src="./assets/work.png" alt="person" width="18" height="18" />
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html">
+                        <img src="./assets/email.png" alt="person" width="18" height="18" />
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <p id="last-update">
+                <script>
+                    document.getElementById("last-update").innerHTML = "Last Updated: " + document.lastModified.split(' ')[0];
+                </script>
+            </p>
+        </div>
+
+        <div id="right-div" class="page-div">
+            <div class="header">
+                <h1>Projects</h1>
+            </div>
+
+            <div id="projects" class="content">
+                <p>
+                    This is a list of recent and old projects. Some can be played in the browser, but others require a download because of their size.
+                    The downloads should take you to their relevant github repo with a release package.
+                </p>
+                <div id="projects-list">
+                    <div class="item-half" id="tictactoe">
+                        <div id="tictactoe-link-img">
+                            <a href="./projectpages/tictactoe/tictactoe.html">
+                                <img src="./assets/tictac.png" alt="tictac" />
+                            </a>
+                        </div>
+                        <div id="tictactoe-text">
+                            <h3>
+                                Tic-Tac-Toe
+                            </h3>
+                            <p>
+                                Tic-tac-toe, play against an unstoppable computer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-half" id="viralvial">
+                        <div id="viralvial-link-img">
+                            <a href="./projectpages/viralvial/viralvial.html">
+                                <img src="./assets/viralvial.png" alt="viralvial" />
+                            </a>
+                        </div>
+                        <div id="viralvial-text">
+                            <h3>Viral Vial</h3>
+                            <p>
+                                Viral vial, play against an unstoppable virus.
+                            </p>
+                        </div>
+                    </div>
+                    <!--<div class="item-half" id="webgl">
+                        <div id="webgl-link-img">
+                            <a href="./projectpages/webgl/webgl.html">
+                                <img src="./assets/viralvial.png" alt="webgl" />
+                            </a>
+                        </div>
+                        <div id="webgl-text">
+                            <h3>
+                                Webgl
+                            </h3>
+                            <p>
+                                Webgl, play against an unstoppable virus.
+                            </p>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <div class="footer">
+                <script>
+                    document.getElementById("last-update").innerHTML = "Last Updated: " + document.lastModified.split(' ')[0];
+                </script>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="_matrix.js"></script>
+</body>
+</html>

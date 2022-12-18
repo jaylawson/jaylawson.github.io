@@ -1,1 +1,173 @@
+/*Page areas*/
+/*
+    website will consist of four areas
+    -sidebar:   for navigation
+    -header:    for page overview
+    -content:   for page info
+    -footer:    for page end features
+     ___ _______
+    |   |_______| <-header
+    |   |       |
+    |nav| info  |
+    |   |_______|
+    |___|_______| <-footer
 
+    overview of site layout
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+    height: auto;
+}
+
+#wrapper-div {
+    width: 100%;
+    height: inherit;
+}
+
+#main-div {
+    width: 100%;
+    position: absolute;
+    background-color: black;
+}
+
+#left-div {
+    width: 20%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    line-height: 50px;
+    padding-top: 2%;
+}
+
+canvas {
+    background: #000;
+    position: fixed;
+}
+
+.sidebar h2 {
+    margin-left: 1em;
+    color: white;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px 150px 150px 150px;
+    margin-left: 14%;
+}
+
+.sidebar-list {
+    list-style-type: none;
+}
+
+ul.sidebar-list li:hover {
+    background: #0f0;
+    padding: 0px;
+    opacity: 0.75;
+}
+
+ul.sidebar-list a {
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 1em;
+}
+
+#last-update {
+    color: white;
+    bottom: 0;
+    position: fixed;
+    padding-left: 1em;
+}
+
+#right-div {
+    width: 80%;
+    height: inherit;
+    float: right;
+    position: relative;
+    padding-left: 0.5em;
+}
+
+.page-div {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header {
+    /*    #FF2400 */
+    background-color: darkorange;
+    min-height: 10vh;
+    line-height: 10vh;
+    padding-left: 2%;
+}
+
+.content {
+    background-color: white;
+    min-height: 80vh;
+    padding: 4%;
+}
+
+.content ul {
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.content p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer {
+    background-color: darkorange;
+    min-height: 10vh;
+    line-height: 10vh;
+    margin-top: auto;
+    padding-left: 2%;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+td, th {
+    border: 2px solid black;
+    width: 5em;
+    height: 5em;
+}
+
+button.game-button {
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    display: block;
+}
+
+#projects {
+}
+
+#projects-list {
+    justify-content: start;
+    display: flex;
+    align-content: center;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+
+.item-half {
+    flex-basis: 50%;
+}
+
+#projects-list img {
+    width: 325px;
+    height: 250px;
+}
