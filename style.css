@@ -151,3 +151,23 @@ button.game-button {
     font-size: 3em;
     display: block;
 }
+
+#projects {
+}
+
+#projects-list {
+    justify-content: start;
+    display: flex;
+    align-content: center;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+
+.item-half {
+    flex-basis: 50%;
+}
+
+#projects-list img {
+    width: 325px;
+    height: 250px;
+}
