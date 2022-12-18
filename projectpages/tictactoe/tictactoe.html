@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../assets/globe.ico" type="image/x-icon">
+</head>
+<body id="wrapper-div">
+
+    <div id="main-div" class="clearfix">
+        <canvas id="canvas-Section">Error, canvas not support</canvas>
+        <div id="left-div" class="sidebar">
+            <img src="../../assets/me.jpg" alt="JKL" class="profile">
+            <h2>Jared K. Lawson</h2>
+            <ul class="sidebar-list" style="font-size: 24px">
+                <li>
+                    <a href="../../index.html">
+                        <img src="../../assets/person2.png" alt="person" width="18" height="18" />
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="../../experience.html">
+                        <img src="../../assets/experience.png" alt="person" width="18" height="18" />
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="../../projects.html">
+                        <img src="../../assets/work.png" alt="person" width="18" height="18" />
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../../contact.html">
+                        <img src="../../assets/email.png" alt="person" width="18" height="18" />
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <p id="last-update">
+                <script>
+                    document.getElementById("last-update").innerHTML = "Last Updated: " + document.lastModified.split(' ')[0];
+                </script>
+            </p>
+        </div>
+
+        <div id="right-div" class="page-div">
+            <div class="header">
+                <h1>Tic Tac Toe</h1>
+            </div>
+
+            <div class="content">
+                <div id="game">
+                    <p>
+                        Tic-tac toe is a game requiring you to match any three pieces across the board left/right, up/down, or diagonal.
+                        You can choose to go first or let your opponent go first.
+                        Your opponent is just minimax or alphabeta algorithm, your choice.
+                        The number of evaluated and expanded states as well as the move orders will be shown below.
+                    </p>
+                    <table id="ui_tictactoe">
+                        <tr>
+                            <td><button id="board0" class="game-button" onclick="boardClick(0)" disabled></button></td>
+                            <td><button id="board1" class="game-button" onclick="boardClick(1)" disabled></button></td>
+                            <td><button id="board2" class="game-button" onclick="boardClick(2)" disabled></button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="board3" class="game-button" onclick="boardClick(3)" disabled></button></td>
+                            <td><button id="board4" class="game-button" onclick="boardClick(4)" disabled></button></td>
+                            <td><button id="board5" class="game-button" onclick="boardClick(5)" disabled></button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="board6" class="game-button" onclick="boardClick(6)" disabled></button></td>
+                            <td><button id="board7" class="game-button" onclick="boardClick(7)" disabled></button></td>
+                            <td><button id="board8" class="game-button" onclick="boardClick(8)" disabled></button></td>
+                        </tr>
+                    </table>
+                    <br />
+                    Human player:
+                    <input type="radio" id="inputX" name="inputOrder" checked="checked">First (X)
+                    <input type="radio" id="inputO" name="inputOrder">Second (O)
+                    <br />
+                    CPU mode is:
+                    <input type="radio" id="inputCpuMM" name="inputCpuMode" checked="checked">MiniMax
+                    <input type="radio" id="inputCpuMMab" name="inputCpuMode">MiniMax w/ Alpha-Beta Pruning
+                    <br />
+                    <button onclick="gameStart()">Start Game</button>
+                    <p id="game-result">Waiting for results...</p>
+                    <p id="game-log"></p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <script>
+                    document.getElementById("last-update").innerHTML = "Last Updated: " + document.lastModified.split(' ')[0];
+                </script>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../_matrix.js"></script>
+    <script src="./tictactoe.js"></script>
+    <script src="./tictactoe_methods.js"></script>
+</body>
+</html>

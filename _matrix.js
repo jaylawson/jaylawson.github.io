@@ -15,13 +15,11 @@ canvas.height = sidebar.offsetHeight;
 var fontSize = 10,
     columns = canvas.width / fontSize;
 
-// Setting up the drops
+// Setting up the drops & their starting pos
 var drops = [];
 for (var i = 0; i < columns; i++) {
     drops[i] = Math.floor(Math.random() * sidebar.children[1].offsetHeight);
 }
-
-console.log(sidebar.height);
 
 // Setting up the draw function
 function draw() {
